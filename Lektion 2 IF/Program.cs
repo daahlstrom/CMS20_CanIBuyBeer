@@ -8,6 +8,7 @@ namespace Lektion_2_IF
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Superduper beer calculator 1.0");
             Console.Write("Hur gammal är du? ");
             int age = Convert.ToInt32(Console.ReadLine());
             Console.Write("Location (systemet eller krogen) ");
@@ -19,9 +20,9 @@ namespace Lektion_2_IF
             decimal promille = Convert.ToDecimal(Console.ReadLine());
 
             bool canIBuyBeer = false;
-            if(legg == "J" && promille < 1.0m)
+            if (legg == "J" && promille < 1.0m)
             {
-                if (location == "krogen" && age > 17)
+                if (location == "krogen" && age > 15)
                 {
                     canIBuyBeer = true;
                 }
@@ -34,13 +35,7 @@ namespace Lektion_2_IF
                 Console.WriteLine("Japp du får köpa öl.");
             else
                 Console.WriteLine("Nej du får inte köpa öl.");
-            //if (age > 17 && location == "krogen" && legg == "J" && promille < 1.0m)
-             //   Console.WriteLine("Japp du får köpa öl.");
-           // else if (age > 19 && location == "systemet" && legg == "J" && promille < 1.0m)
-               // Console.WriteLine("Japp du får köpa öl.");
-           // else
-              //  Console.WriteLine("Du får inte köpa öl.");
-                
+         
         }
     }
 }
